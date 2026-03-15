@@ -80,8 +80,8 @@ const hoodieCount = 2; // 宣告數量
 let hoodieTotal = hoodiePrice * hoodieCount; // 宣告品項總價
 
 const sportShoesPrice = 2590;
-const sportShoesCount = 1;
-let sportShoesTotal = sportShoesPrice * sportShoesCount;
+const sportShoesCount = 1; // 宣告數量
+let sportShoesTotal = sportShoesPrice * sportShoesCount; // 宣告品項總價
 
 amyCarTotal = hoodieTotal + sportShoesTotal;
 

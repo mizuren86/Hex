@@ -243,28 +243,28 @@ function compareOrderStatus(status1, status2) {
 console.log(compareOrderStatus(orderA, orderB)); 
 
 // apporach 2
-let orderA = "待出貨";
-let orderB = "待出貨";
+// let orderA = "待出貨";
+// let orderB = "待出貨";
 
-if (orderA === orderB) {
-    console.log("兩個訂單優先順序相同");
-} else {
-    // 當 A 與 B 不同時，開始細分判斷
-    if (orderA === "退貨處理中") {
-        // A 是最高等級，所以不管 B 是什麼，A 都優先
-        console.log("orderA (退貨處理中) 優先順序最高");
-    } else if (orderA === "待出貨") {
-        // A 是中等，如果 B 是待付款，則 A 優先；若 B 是退貨，則 B 優先
-        if (orderB === "待付款") {
-            console.log("orderA (待出貨) 優先於 orderB (待付款)");
-        } else {
-            console.log("orderB (退貨處理中) 優先於 orderA (待出貨)");
-        }
-    } else {
-        // A 是最低等級 (待付款)，所以 B 只要不是待付款，B 就優先
-        console.log(`orderB (${orderB}) 優先順序較高`);
-    }
-}
+// if (orderA === orderB) {
+//     console.log("兩個訂單優先順序相同");
+// } else {
+//     // 當 A 與 B 不同時，開始細分判斷
+//     if (orderA === "退貨處理中") {
+//         // A 是最高等級，所以不管 B 是什麼，A 都優先
+//         console.log("orderA (退貨處理中) 優先順序最高");
+//     } else if (orderA === "待出貨") {
+//         // A 是中等，如果 B 是待付款，則 A 優先；若 B 是退貨，則 B 優先
+//         if (orderB === "待付款") {
+//             console.log("orderA (待出貨) 優先於 orderB (待付款)");
+//         } else {
+//             console.log("orderB (退貨處理中) 優先於 orderA (待出貨)");
+//         }
+//     } else {
+//         // A 是最低等級 (待付款)，所以 B 只要不是待付款，B 就優先
+//         console.log(`orderB (${orderB}) 優先順序較高`);
+//     }
+// }
 
 
 /***   作業 10 填答區結束   **/

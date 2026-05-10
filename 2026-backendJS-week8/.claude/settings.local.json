@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm start *)",
+      "Bash(npm install *)",
+      "Bash(curl *)",
+      "Bash(node -e ' *)",
+      "Bash(npm test *)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('carts[0].id:', d.get\\('carts',[]\\)[0].get\\('id',''\\) if d.get\\('carts'\\) else 'no carts'\\)\")"
+    ]
+  }
+}
